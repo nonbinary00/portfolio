@@ -14,17 +14,19 @@
   <header class="site-header">
     <a class="brand" href="#top">Your Name</a>
     <nav class="nav" aria-label="Primary">
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#process">Process</a>
-      <a href="#contact">Contact</a>
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <main id="top">
-    <section class="hero container reveal">
+    <section class="hero container reveal" aria-labelledby="hero-title">
       <p class="eyebrow">UX/UI Designer</p>
-      <h1>Designing products that feel clear, human, and easy to trust.</h1>
+      <h1 id="hero-title">Designing products that feel clear, human, and easy to trust.</h1>
       <p class="lead">
         I help teams turn complex ideas into intuitive digital experiences. My focus is
         on clear information architecture, accessible interfaces, and measurable outcomes.
@@ -35,8 +37,8 @@
       </div>
     </section>
 
-    <section id="about" class="container reveal">
-      <h2>About me</h2>
+    <section id="about" class="container reveal" aria-labelledby="about-title">
+      <h2 id="about-title">About me</h2>
       <p>
         I am a UX/UI designer with [X] years of experience in [industry]. I blend user research,
         interaction design, and visual craft to deliver interfaces that are both beautiful and useful.
@@ -57,8 +59,8 @@
       </div>
     </section>
 
-    <section id="work" class="container reveal">
-      <h2>Selected work</h2>
+    <section id="work" class="container reveal" aria-labelledby="work-title">
+      <h2 id="work-title">Selected work</h2>
       <div class="work-grid">
         <article class="work-card">
           <p class="tag">Case Study 01</p>
@@ -84,8 +86,8 @@
       </div>
     </section>
 
-    <section id="process" class="container reveal">
-      <h2>How I work</h2>
+    <section id="process" class="container reveal" aria-labelledby="process-title">
+      <h2 id="process-title">How I work</h2>
       <div class="process-grid">
         <article class="process-step">
           <h3>1. Discover</h3>
@@ -102,10 +104,13 @@
       </div>
     </section>
 
-    <section id="contact" class="container reveal contact">
-      <h2>Let’s build something useful</h2>
+    <section id="contact" class="container reveal contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Let’s build something useful</h2>
       <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-      <p>LinkedIn: <a href="#" aria-label="LinkedIn profile">linkedin.com/in/yourname</a></p>
+      <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/yourname" aria-label="LinkedIn profile">linkedin.com/in/yourname</a>
+      </p>
     </section>
   </main>
 
